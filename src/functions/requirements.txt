@@ -1,0 +1,5 @@
+# 函数运行依赖（纯 Python，跨平台可打包）
+huaweicloudsdkcore==3.1.213
+huaweicloudsdkcsms==3.1.209
+huaweicloudsdkrds==3.1.209
+pg8000==1.31.5

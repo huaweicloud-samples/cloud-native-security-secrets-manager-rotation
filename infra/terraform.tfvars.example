@@ -1,0 +1,21 @@
+# 复制为本目录 terraform.tfvars 后填写；请勿将真实凭据提交到仓库
+region               = "cn-north-4"
+project_name         = "db-credential-rotation"
+project_id           = "<PROJECT_ID>"
+
+secret_name          = "rds-db-credential"
+rds_instance_id      = "<RDS_INSTANCE_ID>"
+
+db_host              = "<RDS_ENDPOINT>"
+db_port              = 5432
+db_user              = "root"
+db_name              = "postgres"
+db_initial_password  = "<INITIAL_PASSWORD>"
+
+function_agency      = "agency:cn-north-4:<DOMAIN_ID>:functiongraph:default"
+rotation_cron        = "0 0 2 * * ?"
+
+# 内网直连场景填写；公网/默认网络场景留空
+function_vpc_id      = ""
+function_network_id  = ""
+function_dns_list    = ""
